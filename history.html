@@ -53,8 +53,8 @@ path.area {
 <script>
 
 var margin = {top: 80, right: 80, bottom: 80, left: 80},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    width = 600 - margin.left - margin.right,
+    height = 330 - margin.top - margin.bottom;
 
 var parse = d3.time.format("%Y").parse;
 
@@ -120,6 +120,20 @@ d3.csv("history.csv", type, function(error, data) {
       .attr("transform", "translate(" + width + ",0)")
       .call(yAxis);
 
+  svg.append("text")
+        .attr("y", 240)
+        .attr("x", 300)
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("World");
+
+  svg.append("text")
+        .attr("y", 60)
+        .attr("x", 300)
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("USA");
+
 
   var colors = d3.scale.category10();
   svg.selectAll('.line')
@@ -144,6 +158,7 @@ d3.csv("history.csv", type, function(error, data) {
     .attr('class', 'curtain')
     .attr('transform', 'rotate(180)')
     .style('fill', '#ffffff')
+
 
   /* Optionally add a guideline */
   var guideline = svg.append('line')
