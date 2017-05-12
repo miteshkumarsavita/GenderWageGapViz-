@@ -47,9 +47,11 @@ path.area {
 <p align ="center">
   <h2>HDI over the years</h2>
   <br>
-  <button type = "button" onclick="window.location.href='parallel-coordinate.html'">Parallel-Coordinate Plot</button>
+  <button type = "button" onclick="window.location.href='parallel-coordinate.html'">Parallel Plot (F)</button>
+  <button type = "button" onclick="window.location.href='parallel-coordinate-men.html'">Parallel Plot (M)</button>
   <button type = "button" onclick="window.location.href='indexScatterPlot.html'">Scatter-Plot</button>
   <button type = "button" onclick="window.location.href='indexBarChart.html'">Bar-Chart</button>
+  <div id = "para"></div>
   <label class="guideline">
 </label>
 <svg></svg>
@@ -103,7 +105,7 @@ d3.csv("history.csv", type, function(error, data) {
   y.domain([0.5, 1.0]).nice();
 
   // Add an SVG element with the desired dimensions and margin.
-  var svg = d3.select("svg")
+  var svg = d3.select("#para").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
     .append("g")
