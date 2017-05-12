@@ -9,16 +9,17 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.manifold import MDS
 
 def gender_dev(filename):
-    dataFrame = pd.read_csv(filename)
+    dataFrame = ps.read_csv(filename)
     cols = ['Country', 'Education - Female','Education - Male','Income - Female','Income - Male']
     cols_1 = ['Country', 'Income - Female','Income - Male']
     cols_2 = ['Country', 'Education - Female','Education - Male']
     dataFrame = dataFrame.iloc[:,(1,9,10,11,12)]
-    dataFrame.columns = cols
-    print(dataFrame)
+    dataFrame2 = ps.DataFrame(dataFrame[dataFrame.iloc[:,(1)] != '..'])
+
+    dataFrame2.columns = cols
    
-    dataFrame.to_csv("bardata_income.csv", sep = ',', columns = cols_1)
-    dataFrame.to_csv("bardata_edu.csv", sep = ',', columns = cols_2)
+    dataFrame2.to_csv("bardata_income.csv", sep = ',', columns = cols_1)
+    dataFrame2.to_csv("bardata_edu.csv", sep = ',', columns = cols_2)
 
 def Sampling(file1, file2):
 	file_name = "Sample.csv"
@@ -28,7 +29,6 @@ def Sampling(file1, file2):
 
 	#Columns used from the dataset : 
 	dataFrame = dataFrame.iloc[:,(0,1,5,6,8)].fillna(0)
-	#dataFrame = dataFrame.applymap(lambda s: s/10 if float(s) > 100 else s)
 	dataFrame['Gross National Income'] = dataFrame1.iloc[:,(11)].fillna(0)
 	dataFrame.columns = ['GII', 'Country','Par_Rep', 'Sec_Edu', 'Lab_Part', 'Income']
 	dataFrame2 = dataFrame[dataFrame.Country != '..']
@@ -37,7 +37,6 @@ def Sampling(file1, file2):
 	dataFrame2 = dataFrame2[dataFrame2.Sec_Edu != '..']
 	dataFrame2 = dataFrame2[dataFrame2.Lab_Part != '..']
 	dataFrame2 = dataFrame2[dataFrame2.Income != '..']
-	#dataFrame.to_csv(file_name, sep = ',',index = False)
 	print(dataFrame2.shape)
 	return
 	return dataFrame2
@@ -101,6 +100,7 @@ def getLoadings(dataFrame, file_name):
 def main():
 
 	df = gender_dev('gender_development.csv')
+	sys.exit()
 
 	file1 = "gender_inequality.csv"
 	file2 = "gender_development.csv"
@@ -136,15 +136,8 @@ def main():
 	final.columns = ['Country', 'PCA1', 'PCA2', 'color']
 	print(final)
 	final.to_csv('PCA_Samples.csv', sep = ',',  index = False)
-	sys.exit()
 	#Generate dataset after fitting PCA - 2D 
-	#generateTestData(samples_PCA,"PCA_Samples.csv",1)
-	
-	#Get highest Scree Plot Data - Eigen Values
-	getDimensionality(samples_PCA, "EigenR.csv")
-	
-	#Get PCA Loadings
-	getLoadings(samples_PCA, "r_load.csv")	
+	generateTestData(samples_PCA,"PCA_Samples.csv",1)
 
 if __name__ == "__main__":
 	main()

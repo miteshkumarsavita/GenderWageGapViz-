@@ -1,0 +1,178 @@
+,Country,Education - Female,Education - Male
+0,Norway,12.7,12.5
+1,Australia,13.1,12.9
+2,Switzerland,11.5,13.1
+3,Denmark,12.8,12.7
+4,Netherlands,11.6,12.2
+5,Germany,12.9,13.8
+6,Ireland,12.3,12
+7,United States,13,12.9
+8,Canada,13.1,13
+9,New Zealand,12.5,12.6
+10,Singapore,10.1,10.9
+11,"Hong Kong, China (SAR)",10.9,11.9
+13,Sweden,12.2,12
+14,United Kingdom,12.9,13.2
+15,Iceland,10.8,10.4
+16,Korea (Republic of),11.2,12.7
+17,Israel,12.5,12.6
+18,Luxembourg,11.3,12.1
+19,Japan,11.3,11.7
+20,Belgium,10.6,11.1
+21,France,11,11.3
+22,Austria,9.9,11.9
+23,Finland,10.2,10.2
+24,Slovenia,11.8,12
+25,Spain,9.4,9.8
+26,Italy,9.5,10.2
+27,Czech Republic,12.1,12.5
+28,Greece,9.8,10.5
+29,Estonia,12.7,12.2
+30,Brunei Darussalam,8.5,9
+31,Cyprus,11.4,11.8
+32,Qatar,10.4,8.8
+34,Slovakia,12.3,12.2
+35,Poland,11.7,11.9
+36,Lithuania,12.3,12.5
+37,Malta,9.9,10.8
+38,Saudi Arabia,7.8,9.3
+39,Argentina,9.8,9.8
+40,United Arab Emirates,9.9,8.5
+41,Chile,9.7,9.9
+42,Portugal,8.1,8.4
+43,Hungary,11.3,12.2
+44,Bahrain,9.1,9.6
+45,Latvia,11.7,11.2
+46,Croatia,10.5,11.6
+47,Kuwait,7.3,7.1
+48,Montenegro,10.5,11.8
+49,Belarus,11.9,12.1
+50,Russian Federation,11.9,12
+51,Oman,7,8.5
+52,Romania,10.3,11.1
+53,Uruguay,8.7,8.2
+54,Bahamas,11.1,10.7
+55,Kazakhstan,11.3,11.5
+56,Barbados,10.6,10.2
+58,Bulgaria,10.6,10.4
+60,Panama,9.6,9.1
+61,Malaysia,9.4,10.1
+62,Mauritius,8,9.1
+64,Trinidad and Tobago,10.7,10.9
+65,Serbia,9.8,11.2
+66,Cuba,11.4,11.6
+67,Lebanon,7.6,8.2
+68,Costa Rica,8.4,8.3
+69,Iran (Islamic Republic of),7.7,8.6
+70,Venezuela (Bolivarian Republic of),9.2,8.6
+71,Turkey,6.7,8.5
+72,Sri Lanka,10.7,10.9
+73,Mexico,8.2,8.8
+74,Brazil,7.8,7.5
+75,Georgia,12,12.3
+77,Azerbaijan,10.5,11.2
+79,Jordan,9.3,10.5
+80,The former Yugoslav Republic of Macedonia,8.7,9.8
+81,Ukraine,11.3,11.4
+82,Algeria,4.8,7.8
+83,Peru,8.5,9.6
+84,Albania,8.9,9.6
+85,Armenia,10.8,10.9
+86,Bosnia and Herzegovina,6.6,8.6
+87,Ecuador,7.4,7.6
+88,Saint Lucia,9.4,9.3
+89,China,6.9,8.2
+90,Fiji,9.8,10
+91,Mongolia,9.5,9
+92,Thailand,7.1,7.5
+94,Libya,7.7,7
+95,Tunisia,5.9,7.8
+96,Colombia,7.4,7.3
+98,Jamaica,10,9.4
+99,Tonga,10.7,10.8
+100,Belize,10.5,10.5
+101,Dominican Republic,7.7,7.2
+102,Suriname,7.3,8
+103,Maldives,5.7,6
+104,Samoa,10.3,10.3
+105,Botswana,8.7,9.1
+106,Moldova (Republic of),11.1,11.3
+107,Egypt,5.4,7.7
+109,Gabon,8.9,6.6
+110,Indonesia,7,8.2
+111,Paraguay,7.5,7.9
+112,"Palestine, State of",8.4,9.3
+113,Uzbekistan,9.5,9.9
+114,Philippines,8.4,7.9
+115,El Salvador,6.2,6.9
+116,South Africa,9.7,10.2
+117,Viet Nam,7,7.9
+118,Bolivia (Plurinational State of),7.5,8.9
+119,Kyrgyzstan,10.5,10.6
+120,Iraq,5.1,7.7
+123,Guyana,8.9,8
+124,Nicaragua,6.2,5.8
+125,Morocco,3.2,5.3
+126,Namibia,6.3,6.1
+127,Guatemala,5.5,5.7
+128,Tajikistan,9.6,11.2
+129,India,3.6,7.2
+130,Honduras,5.5,5.4
+131,Bhutan,2,4.1
+132,Timor-Leste,3.6,5.3
+133,Syrian Arab Republic,5.4,7.4
+134,Vanuatu,8,10
+135,Congo,4.9,6.5
+137,Equatorial Guinea,4,7.2
+138,Zambia,5.8,7.3
+139,Ghana,5.6,7.9
+140,Lao People's Democratic Republic,3.9,6.1
+141,Bangladesh,4.5,5.5
+142,Cambodia,3.2,5.4
+143,Sao Tome and Principe,4,5.5
+144,Kenya,5.9,7.3
+145,Nepal,2.3,4.5
+146,Pakistan,3.1,6.2
+147,Myanmar,4.3,3.8
+149,Swaziland,7.4,6.8
+150,Tanzania (United Republic of),4.5,5.8
+151,Nigeria,4.9,7.1
+152,Cameroon,5.3,6.7
+153,Madagascar,6.6,6.1
+154,Zimbabwe,6.7,7.7
+155,Mauritania,2.7,4.8
+157,Papua New Guinea,3.2,4.8
+158,Comoros,3.7,5.6
+159,Yemen,1.3,3.8
+160,Lesotho,6.5,5.2
+161,Togo,3,6.3
+162,Haiti,4.2,5.6
+163,Rwanda,3.2,4.3
+164,Uganda,4.5,6.3
+165,Benin,2.1,4.6
+166,Sudan,2.5,3.8
+168,South Sudan,4.5,5.8
+169,Senegal,1.8,3.2
+170,Afghanistan,1.2,5.1
+171,Côte d'Ivoire,3.2,5.3
+172,Malawi,3.4,5.2
+173,Ethiopia,1.4,3.6
+174,Gambia,2,3.7
+175,Congo (Democratic Republic of the),4.5,7.7
+176,Liberia,2.6,5.8
+178,Mali,1.5,2.7
+179,Mozambique,2.4,4.3
+180,Sierra Leone,2.2,4
+181,Guinea,1.4,3.7
+182,Burkina Faso,1,1.9
+183,Burundi,2.2,3.1
+184,Chad,1,2.9
+186,Central African Republic,2.8,5.7
+187,Niger,0.8,2
+188,Arab States,4.9,6.9
+189,East Asia and the Pacific,6.9,8
+190,Europe and Central Asia,9,10
+191,Latin America and the Caribbean,8,8.1
+192,South Asia,3.7,6.9
+193,Sub-Saharan Africa,4.2,6
+194,World,6.2,7.9

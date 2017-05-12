@@ -1,0 +1,178 @@
+,Country,Income - Female,Income - Male
+0,Norway,57140,72825
+1,Australia,33688,50914
+2,Switzerland,44132,69077
+3,Denmark,36439,51727
+4,Netherlands,29500,61641
+5,Germany,34886,53290
+6,Ireland,30104,49166
+7,United States,43054,63158
+8,Canada,33587,50853
+9,New Zealand,24309,41372
+10,Singapore,59994,93699
+11,"Hong Kong, China (SAR)",38060,72052
+13,Sweden,40222,51084
+14,United Kingdom,27259,51628
+15,Iceland,28792,41486
+16,Korea (Republic of),21896,46018
+17,Israel,22451,39064
+18,Luxembourg,47723,69800
+19,Japan,24975,49541
+20,Belgium,31879,50845
+21,France,31073,45497
+22,Austria,29598,58826
+23,Finland,31644,45994
+24,Slovenia,22180,33593
+25,Spain,24059,40221
+26,Italy,22526,44148
+27,Czech Republic,19929,33604
+28,Greece,17288,31952
+29,Estonia,20854,30254
+30,Brunei Darussalam,54228,90437
+31,Cyprus,22613,34400
+32,Qatar,55123,143979
+34,Slovakia,19903,32122
+35,Poland,18423,28271
+36,Lithuania,20955,28656
+37,Malta,16435,39432
+38,Saudi Arabia,20094,77044
+39,Argentina,14202,30237
+40,United Arab Emirates,22391,77300
+41,Chile,14732,27992
+42,Portugal,21259,30543
+43,Hungary,17443,28960
+44,Bahrain,20038,49890
+45,Latvia,18437,26845
+46,Croatia,16200,22853
+47,Kuwait,42292,111988
+48,Montenegro,11106,18094
+49,Belarus,12922,21010
+50,Russian Federation,17269,28287
+51,Oman,14709,46400
+52,Romania,15250,21117
+53,Uruguay,14721,24166
+54,Bahamas,17868,24957
+55,Kazakhstan,15408,26746
+56,Barbados,10245,14739
+58,Bulgaria,12448,18926
+60,Panama,13699,22597
+61,Malaysia,15635,30320
+62,Mauritius,10541,24581
+64,Trinidad and Tobago,19669,32656
+65,Serbia,9697,14799
+66,Cuba,4912,9665
+67,Lebanon,7334,25391
+68,Costa Rica,9680,17033
+69,Iran (Islamic Republic of),4828,25924
+70,Venezuela (Bolivarian Republic of),12458,19840
+71,Turkey,10024,27645
+72,Sri Lanka,5452,14307
+73,Mexico,10233,22252
+74,Brazil,11393,19084
+75,Georgia,4887,9718
+77,Azerbaijan,10120,22814
+79,Jordan,3587,18831
+80,The former Yugoslav Republic of Macedonia,8796,14754
+81,Ukraine,6518,10120
+82,Algeria,3898,22009
+83,Peru,8040,13977
+84,Albania,7217,12655
+85,Armenia,6042,10089
+86,Bosnia and Herzegovina,6514,12912
+87,Ecuador,8487,12723
+88,Saint Lucia,8018,11576
+89,China,10128,14795
+90,Fiji,4274,10592
+91,Mongolia,9029,12462
+92,Thailand,11820,14888
+94,Libya,7427,22392
+95,Tunisia,4748,16159
+96,Colombia,9785,14372
+98,Jamaica,5820,9059
+99,Tonga,3796,6336
+100,Belize,5034,10198
+101,Dominican Republic,8860,14903
+102,Suriname,10241,20970
+103,Maldives,8531,16073
+104,Samoa,3416,7124
+105,Botswana,15179,18096
+106,Moldova (Republic of),4599,5915
+107,Egypt,4928,16049
+109,Gabon,13527,19177
+110,Indonesia,6485,13052
+111,Paraguay,5576,9678
+112,"Palestine, State of",1580,7726
+113,Uzbekistan,3811,7342
+114,Philippines,5382,10439
+115,El Salvador,5497,9406
+116,South Africa,8713,15737
+117,Viet Nam,4624,5570
+118,Bolivia (Plurinational State of),4383,7140
+119,Kyrgyzstan,2122,3992
+120,Iraq,4279,23515
+123,Guyana,4164,8804
+124,Nicaragua,2967,5979
+125,Morocco,3222,10573
+126,Namibia,7672,11267
+127,Guatemala,5021,8934
+128,Tajikistan,2014,3017
+129,India,2116,8656
+130,Honduras,2365,5508
+131,Bhutan,5733,8418
+132,Timor-Leste,3122,7530
+133,Syrian Arab Republic,864,4523
+134,Vanuatu,2141,3445
+135,Congo,5165,6859
+137,Equatorial Guinea,17073,24850
+138,Zambia,3019,4452
+139,Ghana,3200,4515
+140,Lao People's Democratic Republic,4086,5279
+141,Bangladesh,2278,4083
+142,Cambodia,2526,3393
+143,Sao Tome and Principe,1886,3976
+144,Kenya,2255,3270
+145,Nepal,1956,2690
+146,Pakistan,1450,8100
+147,Myanmar,3873,5386
+149,Swaziland,3894,7235
+150,Tanzania (United Republic of),2320,2502
+151,Nigeria,4052,6585
+152,Cameroon,2266,3341
+153,Madagascar,1098,1560
+154,Zimbabwe,1387,1850
+155,Mauritania,1625,5468
+157,Papua New Guinea,2145,2768
+158,Comoros,778,2123
+159,Yemen,1595,5412
+160,Lesotho,2613,4017
+161,Togo,1084,1376
+162,Haiti,1379,1966
+163,Rwanda,1312,1612
+164,Uganda,1226,1997
+165,Benin,1493,2043
+166,Sudan,1882,5722
+168,South Sudan,..,..
+169,Senegal,1657,2739
+170,Afghanistan,506,3227
+171,Côte d'Ivoire,2146,4157
+172,Malawi,679,815
+173,Ethiopia,1090,1765
+174,Gambia,1267,1753
+175,Congo (Democratic Republic of the),597,765
+176,Liberia,678,930
+178,Mali,961,2195
+179,Mozambique,1040,1210
+180,Sierra Leone,1582,1981
+181,Guinea,877,1314
+182,Burkina Faso,1325,1859
+183,Burundi,693,825
+184,Chad,1657,2513
+186,Central African Republic,476,689
+187,Niger,491,1319
+188,Arab States,5686,24985
+189,East Asia and the Pacific,9017,13780
+190,Europe and Central Asia,8238,17607
+191,Latin America and the Caribbean,10194,18435
+192,South Asia,2198,8827
+193,Sub-Saharan Africa,2626,4148
+194,World,10296,18373

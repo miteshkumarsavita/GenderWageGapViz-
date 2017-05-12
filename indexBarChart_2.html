@@ -96,24 +96,23 @@ rect {
 </style>
 <head>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-
 <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 </head>
 <body bgcolor = "#efedf5" align = "center">
+<input name="action" type="submit" value="Go Back" onclick="history.go(-1);"/>
+<p align = "center">
+    <select id = "Index" value = "update" class = "select">
+    <option value="Income" selected="selected">Income</option>
+    <option value="Education">Education</option>
+    </select>
 
-<div id="Left"></div>
-<div id="Right"></div>
-<button type = "button" onclick="window.location.href='parallel-coordinate.html'">Parallel-Coordinate Plot</button>
-  <button type = "button" onclick="window.location.href='indexScatterPlot.html'">Scatter-Plot</button>
-  <button type = "button" onclick="window.location.href='indexBarChart.html'">Bar-Chart</button>
 <script>
 
-function plotChart(dataset, label, divi)
+function plotChart(dataset, label)
 {
-  console.log(dataset);
-var margin = {top:30, right:50, bottom:100, left:50}, 
-width = 400-margin.left-margin.right,
-height = 300-margin.top-margin.bottom;
+var margin = {top:100, right:300, bottom:100, left:100}, 
+width = 900-margin.left-margin.right,
+height = 500-margin.top-margin.bottom;
 
 var x0 = d3.scale.ordinal()
     .rangeRoundBands([0, width], .2);
@@ -125,6 +124,8 @@ var y = d3.scale.linear()
 
 var color = d3.scale.ordinal()
   .range(['#bcbddc','#756bb1']);
+//var color = d3.scale.ordinal()
+  // .range(["#ff66b2", "#6666ff"]);
 var xAxis = d3.svg.axis()
     .scale(x0)
     .orient("bottom");
@@ -134,9 +135,9 @@ var yAxis = d3.svg.axis()
     .orient("left")
     .tickFormat(d3.format(".3s"));
 
-
-console.log(dataset);
-var svg = d3.select(divi).append("svg")
+d3.select("svg").remove();
+//console.log(dataset);
+var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
@@ -176,7 +177,7 @@ svg.append("g")
     .style("font-weight", "bold")
     .attr("dx", "-.8em")
     .attr("dy", ".15em")
-    .attr("transform", "rotate(-45)");;
+    .attr("transform", "rotate(-45)");
 
 svg.append("g")
     .attr("class", "y axis")
@@ -185,8 +186,8 @@ svg.append("g")
     .attr("transform", "rotate(-90)")
     .style("font-weight", "bold")
     .style("font-size", "12px")
-    .attr("y", -50)
-    .attr("x", -10)
+    .attr("y", -55)
+    .attr("x", -80)
     .attr("dy", ".71em")
     .style("text-anchor", "end")
     .text(label);
@@ -229,14 +230,14 @@ var legend = svg.selectAll(".legend")
     .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
 legend.append("rect")
-    .attr("x", width -20)
+    .attr("x", width )
     .attr("y", -20)
     .attr("width", 18)
     .attr("height", 18)
     .style("fill", color);
 
 legend.append("text")
-    .attr("x", width -40)
+    .attr("x", width -20)
     .attr("y", -10)
     .attr("dy", ".35em")
     .style("font-weight", "bold")
@@ -248,20 +249,56 @@ legend.append("text")
 function parserFn(d) {
     return d;
     }
-    </script>
 
-<script type="text/javascript">
-var divi = "#Left";
-d3.csv("bardata_income.csv", parserFn,
-            function(error, dataset) {
-            plotChart(dataset, "Gross Per-Year Income ($)", divi); 
-            });    
+var param = getParameterByName("var");
+console.log(param);
 
-var divr = "#Right";
-d3.csv("bardata_edu.csv", parserFn,
-            function(error, dataset) {
-            plotChart(dataset, "Average Education (Years)", divr); 
-            });    
+d3.csv("bardata_all_income.csv", function(csv) {
+    csv = csv.filter(function(row) {
+        return row['Country'] == 'United States' || row['Country'] == 'World' || row['Country'] == param.toString();
+    })
+    console.log(csv);
+plotChart(csv, "Gross Per-Year Income ($)");
+});
+
+d3.select('#Index')
+          .on("change", function () {
+          var sect = document.getElementById("Index");
+          var selector = sect.options[sect.selectedIndex].value;
+          console.log(selector)
+          if (selector === "Income")
+          {
+             d3.csv("bardata_all_income.csv", function(csv) {
+             csv = csv.filter(function(row) {
+             return row['Country'] == 'United States' || row['Country'] == 'World' || row['Country'] == param.toString();
+          })
+          console.log(csv);
+          plotChart(csv, "Gross Per-Year Income ($)");
+          });    
+          } 
+
+          if (selector === "Education")
+          {
+             d3.csv("bardata_all_edu.csv", function(csv) {
+             csv = csv.filter(function(row) {
+             return row['Country'] == 'United States' || row['Country'] == 'World' || row['Country'] == param.toString();
+          })
+          console.log(csv);
+          plotChart(csv, "Average Education in Years");
+          });    
+          }
+          }); 
+
+    
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
 
 </script>
 </body>
