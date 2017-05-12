@@ -44,9 +44,10 @@ path.area {
 
 </style>
 <body>
-<label class="guideline">
-  Show Guideline & Curtain
-  <input type="checkbox" id="show_guideline" />
+  <button type = "button" onclick="window.location.href='parallel-coordinate.html'">Parallel-Coordinate Plot</button>
+  <button type = "button" onclick="window.location.href='indexScatterPlot.html'">Scatter-Plot</button>
+  <label class="guideline">
+
 </label>
 <svg></svg>
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -121,14 +122,14 @@ d3.csv("history.csv", type, function(error, data) {
       .call(yAxis);
 
   svg.append("text")
-        .attr("y", 240)
+        .attr("y", 120)
         .attr("x", 300)
         .attr("dy", "1em")
         .style("text-anchor", "middle")
         .text("World");
 
   svg.append("text")
-        .attr("y", 60)
+        .attr("y", 40)
         .attr("x", 300)
         .attr("dy", "1em")
         .style("text-anchor", "middle")
