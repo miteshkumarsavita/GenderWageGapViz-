@@ -44,6 +44,7 @@ path.area {
 
 </style>
 <body>
+  <h2>HDI over the years</h2>
   <button type = "button" onclick="window.location.href='parallel-coordinate.html'">Parallel-Coordinate Plot</button>
   <button type = "button" onclick="window.location.href='indexScatterPlot.html'">Scatter-Plot</button>
   <button type = "button" onclick="window.location.href='indexBarChart.html'">Bar-Chart</button>
@@ -91,6 +92,10 @@ d3.csv("history.csv", type, function(error, data) {
     return d.symbol == "USA";
   });
 
+  var india = data.filter(function(d) {
+    return d.symbol == "India";
+  });
+
   // Compute the minimum and maximum date, and the maximum hdi.
   x.domain([world[0].date, world[world.length - 1].date]);
   //console.log(world[2])
@@ -136,10 +141,24 @@ d3.csv("history.csv", type, function(error, data) {
         .style("text-anchor", "middle")
         .text("USA");
 
+  svg.append("text")
+        .attr("y", 190)
+        .attr("x", 250)
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("Year");
+
+  svg.append("text")
+        .attr("y", 75)
+        .attr("x", 480)
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .text("HDI");
+
 
   var colors = d3.scale.category10();
   svg.selectAll('.line')
-    .data([world, usa])
+    .data([world, usa, india])
     .enter()
       .append('path')
         .attr('class', 'line')
@@ -176,7 +195,7 @@ d3.csv("history.csv", type, function(error, data) {
   var t = svg.transition()
     .delay(750)
     .duration(6000)
-    .ease('exp')
+    .ease('linear')
     .each('end', function() {
       d3.select('line.guide')
         .transition()

@@ -333,7 +333,7 @@ if (window.location.hash === "") {
         if (!err) {
             console.log(res);
             var data = d3.nest().key(function(d) { return d.region; }).key(function(d) { return d.subregion; }).entries(res);
-            main({title: "World Population"}, {key: "World", values: data});
+            main({title: "Differences in Wage TreeMap"}, {key: "World", values: data});
         }
     });
 }
